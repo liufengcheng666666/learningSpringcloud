@@ -1,9 +1,13 @@
+server:
+  port: 8009
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-server:
-  port: 8882
 spring:
   application:
-    name: order-server
+    name: user-server
+feign:
+  hystrix:
+    enabled: true
+
