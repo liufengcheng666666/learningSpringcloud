@@ -7,6 +7,15 @@ server:
 spring:
   application:
     name: zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: order-server
+    api-b:
+      path: /api-b/**
+      serviceId: user-server
+
 
 
 
